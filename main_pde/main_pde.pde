@@ -1,7 +1,7 @@
 PImage img;
 PFont light, medium, regular;
 
-String oName = "20191218_final.png";
+String oName = "20210525_White_box.png";
 
 void showText(PFont f, String s, int x, int y, int alignX, int alignY)
 {
@@ -47,15 +47,15 @@ class Block
 }
 PFont f_regular(int size)
 {
-    return createFont("NotoSansCJKtc-Regular", size);
+    return createFont("NotoSansCJKtc-Regular.otf", size);
 }
 PFont f_medium(int size)
 {
-    return createFont("NotoSansCJKtc-Medium", size);
+    return createFont("NotoSansCJKtc-Medium.otf", size);
 }
 PFont f_light(int size)
 {
-    return createFont("NotoSansCJKtc-Light", size);
+    return createFont("NotoSansCJKtc-Light.otf", size);
 }
 
 Block title, date, time, name;
@@ -64,11 +64,11 @@ void setup() {
     size(1920, 1080);
     img = loadImage("bg.png");
 
-    title = new Block("   Final CTF", f_regular(100), 555, 431, CENTER, CENTER);
+    title = new Block("    aaaaaaa", f_regular(100), 555, 431, CENTER, CENTER);
     int rBorder = 1135;
-    name = new Block("Roy", f_light(85), rBorder, 370, LEFT, CENTER);
-    date = new Block("12/18 星期三", f_light(55), rBorder, 484-5, LEFT, CENTER);
-    time = new Block("19:00 SF645", f_light(55), rBorder, 550-5, LEFT, CENTER);
+    name = new Block("Halloworld", f_light(85), rBorder, 370, LEFT, CENTER);
+    date = new Block("05/25 星期二", f_light(55), rBorder, 484-5, LEFT, CENTER);
+    time = new Block("19:00 Discord", f_light(55), rBorder, 550-5, LEFT, CENTER);
     //String[] fontList = PFont.list();
     //printArray(fontList);
 }
